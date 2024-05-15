@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'Android';
+    src: url('fontes/idroid.otf') format('opentype');
+}
+    :root {
+        --fonte-padrao:Georgia, 'Times New Roman', Times, serif;
+        --fonte-destaque: 'Bebas Neue', cursive;
+        --fonte-android: 'Android', cursive;
+    }
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+a.externo:after{
+    content:"\00A0\1F517";
+}
+body {
+    background-image: linear-gradient(to bottom,rgba(18, 168, 255, 0.774), rgba(3, 77, 121, 0.863) );
+    font-family: var(--fonte-padrao);
+}
+
+header {
+    background-image: linear-gradient(to bottom,rgba(41, 154, 219, 0.795), rgba(2, 60, 94, 0.918) );
+    min-height: 150px;
+    padding-top: 40px;
+    color: white;
+}
+header > h1 {
+    font-family:var(--fonte-android);
+    text-align: center;
+
+}
+header > p {
+    font-family:var(--fonte-padrao)
+}
+body {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+nav {
+    background-color: rgba(2, 60, 94, 0.918) ;
+    padding: 12px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.226);
+    text-align: left;
+
+}
+nav > a{
+    color:white;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover {
+    background-color:rgba(0, 195, 255, 0.685)
+}
+
+.container {
+    margin: 20px auto;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    margin: 10px 0;
+    padding: 5px;
+    width: 100px;
+}
+
+#generateButton {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#result {
+    font-size: 20px;
+    margin-top: 15px;
+}
+/* Estilos para o botão */
+button {
+    background-color: #25D365; /* Verde WhatsApp */
+    color: white; /* Branco */
+    font-size: 16px; /* Tamanho da fonte */
+    font-family: Arial, sans-serif; /* Tipo de fonte */
+    padding: 10px 20px; /* Preenchimento interno */
+    border: none; /* Remover borda padrão */
+    border-radius: 5px; /* Arredondar cantos */
+    cursor: pointer; /* Indicar cursor ao passar o mouse */
+  }
+  
+footer {
+    background-image: linear-gradient(to bottom,rgba(57, 175, 243, 0.795), rgba(4, 106, 165, 0.863) );
+    color: white;
+    text-align: center;
+    margin-top: 379px;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+footer a{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color:brown
+}
